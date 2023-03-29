@@ -1,0 +1,12 @@
+-- a)
+-- select ID, name, city
+-- from employee, works
+-- where employee.ID = works. and company_name="First Bank Corporation"
+-- b)
+-- select id, name, city
+-- from employee, works
+-- whereemployee.id = works.id and company_name="First Bank Corporation"
+-- and salary>10000
+-- c)
+-- select eid from employee, works 
+-- where employee.id = works.ID and company_name <> 'FirstBank Corporation'
