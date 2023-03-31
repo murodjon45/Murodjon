@@ -1,0 +1,21 @@
+-- -- a)agent database
+-- SET search_path = my_schema, "$user", entertainmentagencyexample;
+-- select agtfirstname, agtlastname, agtphonenumber
+-- from agents order by agtfirstname asc, agtlastname asc
+-- b)
+-- SET search_path = my_schema, "$user",entertainmentagencyexample;
+-- select engagementnumber, startdate, enddate, stoptime, contractprice,
+-- customerid, agentid, entertainerid
+-- from engagements
+-- -- c)
+-- SET search_path = my_schema, "$user",entertainmentagencyexample;
+-- select * from engagements
+-- order by engagementnumber desc, starttime asc
+
+
+-- 1
+-- SET search_path = my_schema, "$user", recipesexample;
+-- select * from ingredients
+-- 2
+SET search_path = my_schema, "$user", recipesexample;
+select * from recipes order by recipetitle asc
