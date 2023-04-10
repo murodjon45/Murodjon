@@ -1,0 +1,45 @@
+SET search_path = my_schema, "$user",salesordersexample ;
+-- 1
+-- select custfirstname, orderdate
+-- from customers c
+-- inner join orders o on c.customerid = o.customerid
+-- order by o.orderdate asc
+-- 2
+-- select vendname, productname 
+-- from products p 
+-- inner join product_vendors pv on p.productnumber = pv.productnumber
+-- inner join vendors v on pv.vendorid = v.vendorid
+-- where wholesaleprice < 100
+-- GROUP BY v.vendname, p.productname;
+-- 3
+
+-- select distinct custfirstname, empfirstname
+-- from customers c
+-- inner join orders o on c.customerid = o.customerid
+-- inner join employees e
+-- on o.employeeid = e.employeeid
+-- where c.custlastname=e.emplastname 
+
+-- 4
+-- set search_path = my_schema, "$user", entertainmentagencyexample;
+-- select agentid, entertainerid
+-- from entertainers e
+-- inner join agents a
+-- on a.agtzipcode = e.entzipcode
+-- 5
+
+set search_path = my_schema, "$user", recipesexample;
+-- select distinct recipetitle from recipes r
+-- inner join recipe_ingredients ri
+-- on r.recipeid = ri.recipeid
+-- inner join ingredients i_n
+-- on ri.ingredientid = i_n.ingredientid
+-- where i_n.ingredientname='Beef' or i_n.ingredientname='Garlic'
+-- 6
+
+-- select distinct recipetitle from recipes r
+-- inner join recipe_ingredients ri
+-- on r.recipeid = ri.recipeid
+-- inner join ingredients i_n
+-- on ri.ingredientid=i_n.ingredientid
+-- where i_n.ingredientname='Milk'
